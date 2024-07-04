@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li>Main</li>
+            <li>About</li>
+            <li>Hotels</li>
+        </ul>
+    </nav>
+
+    <section class="">
+        <h2>Hotels</h2>
+        <nav>
+            <ul>
+                <li>Icon</li>
+                <li>Hotels</li>
+            </ul>
+        </nav>
+    </section>
+
+</header>
+
+<main>
+    <div>
+        <form action="https://echo.htmlacademy.ru/">
+            <h3>Infrastructure</h3>
+            <label for="pool"><input type="checkbox" name="pool" id="pool" checked>Pool</label>
+            <label for="parking"><input type="checkbox" name="parking" id="parking" checked>Parking</label>
+            <label for="wifi"><input type="checkbox" name="wifi" id="wifi" checked>Wi-Fi</label>
+            <h3>Type</h3>
+            <label for="hotels"><input type="radio" name="Hotels" id="hotels">Hotels</label>
+            <label for="motels"><input type="radio" name="Motels" id="motels">Motels</label>
+            <label for="apartments"><input type="radio" name="Apartments" id="apartments">Apartments</label>
+            <h3>Price</h3>
+            <input type="text" id="price-from" name="price-from" value="0">
+            <input type="text" id="price-to" name="price-to" value="1000">
+            <input type="submit">
+            <button>Reset</button>
+        </form>
+    </div>
+    <section class="Result">
+        <p>Found 38 hotels</p>
+        <h3>Sorting</h3>
+        <select name="prices" id="price-sort">
+            <option value="cheapest">Cheapest</option>
+            <option value="expensive">Expensive</option>
+            <option value="popular">Popular</option>
+            <option value="comfort">Comfort</option>
+        </select>
+
+        <ul>
+            <li>Cards</li>
+            <li>Slide</li>
+            <li>List</li>
+        </ul>
+    </section>
+    <section class="gallery-result">
+        <div>
+            <img src="images/hotel.jpg" alt="result1" width="300" height="200">
+            <h3>Titel</h3>
+            <label for="card-hotel">
+                <input type="button" id="card-hotel" value="Review">
+            </label>
+            <label for="add-to-fav">
+                <input type="button" id="add-to-fav" value="Add to Favorites">
+            </label>
+            <p><span>⭐⭐⭐⭐</span>Rating</p>
+        </div>
+
+        <button>Load more</button>
+    </section>
+
+    <div class="list-of-pages">
+        <input type="button" value="1">
+        <input type="button" value="2">
+        <input type="button" value="3">
+    </div>
+
+</main>
+
+</body>
+</html>
