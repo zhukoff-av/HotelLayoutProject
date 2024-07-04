@@ -2,86 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Hotel Catalog</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
 <header>
     <nav>
         <ul>
-            <li>Main</li>
-            <li>About</li>
-            <li>Hotels</li>
+            <li><a href="#main">Main</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#hotels">Hotels</a></li>
         </ul>
     </nav>
 
-    <section class="">
+    <section>
         <h2>Hotels</h2>
         <nav>
             <ul>
-                <li>Icon</li>
-                <li>Hotels</li>
+                <li><a href="#icon">Icon</a></li>
+                <li><a href="#hotel-list">Hotels</a></li>
             </ul>
         </nav>
     </section>
-
 </header>
 
 <main>
     <div>
         <form action="https://echo.htmlacademy.ru/">
             <h3>Infrastructure</h3>
-            <label for="pool"><input type="checkbox" name="pool" id="pool" checked>Pool</label>
-            <label for="parking"><input type="checkbox" name="parking" id="parking" checked>Parking</label>
-            <label for="wifi"><input type="checkbox" name="wifi" id="wifi" checked>Wi-Fi</label>
+            <label for="pool"><input type="checkbox" name="infrastructure" id="pool" value="Pool" checked>Pool</label>
+            <label for="parking"><input type="checkbox" name="infrastructure" id="parking" value="Parking" checked>Parking</label>
+            <label for="wifi"><input type="checkbox" name="infrastructure" id="wifi" value="Wi-Fi" checked>Wi-Fi</label>
             <h3>Type</h3>
-            <label for="hotels"><input type="radio" name="Hotels" id="hotels">Hotels</label>
-            <label for="motels"><input type="radio" name="Motels" id="motels">Motels</label>
-            <label for="apartments"><input type="radio" name="Apartments" id="apartments">Apartments</label>
+            <label for="hotels"><input type="radio" name="type" id="hotels" value="Hotels">Hotels</label>
+            <label for="motels"><input type="radio" name="type" id="motels" value="Motels">Motels</label>
+            <label for="apartments"><input type="radio" name="type" id="apartments" value="Apartments">Apartments</label>
             <h3>Price</h3>
-            <input type="text" id="price-from" name="price-from" value="0">
-            <input type="text" id="price-to" name="price-to" value="1000">
+            <label for="price-from">From: <input type="text" id="price-from" name="price-from" value="0"></label>
+            <label for="price-to">To: <input type="text" id="price-to" name="price-to" value="1000"></label>
             <input type="submit">
-            <button>Reset</button>
+            <button type="reset">Reset</button>
         </form>
     </div>
-    <section class="Result">
+    <section class="result">
         <p>Found 38 hotels</p>
         <h3>Sorting</h3>
-        <select name="prices" id="price-sort">
-            <option value="cheapest">Cheapest</option>
-            <option value="expensive">Expensive</option>
-            <option value="popular">Popular</option>
-            <option value="comfort">Comfort</option>
-        </select>
+        <label for="price-sort">Sort by:
+            <select name="prices" id="price-sort">
+                <option value="cheapest">Cheapest</option>
+                <option value="expensive">Expensive</option>
+                <option value="popular">Popular</option>
+                <option value="comfort">Comfort</option>
+            </select>
+        </label>
 
         <ul>
-            <li>Cards</li>
-            <li>Slide</li>
-            <li>List</li>
+            <li><a href="#cards">Cards</a></li>
+            <li><a href="#slide">Slide</a></li>
+            <li><a href="#list">List</a></li>
         </ul>
     </section>
     <section class="gallery-result">
         <div>
-            <img src="images/hotel.jpg" alt="result1" width="300" height="200">
-            <h3>Titel</h3>
-            <label for="card-hotel">
-                <input type="button" id="card-hotel" value="Review">
-            </label>
-            <label for="add-to-fav">
-                <input type="button" id="add-to-fav" value="Add to Favorites">
-            </label>
+            <img src="images/hotel.jpg" alt="Hotel" width="300" height="200">
+            <h3>Title</h3>
+            <button id="card-hotel">Review</button>
+            <button id="add-to-fav">Add to Favorites</button>
             <p><span>⭐⭐⭐⭐</span>Rating</p>
         </div>
-
         <button>Load more</button>
     </section>
 
     <div class="list-of-pages">
-        <input type="button" value="1">
-        <input type="button" value="2">
-        <input type="button" value="3">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
     </div>
-
 </main>
 
 </body>
