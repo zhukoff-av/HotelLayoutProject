@@ -38,31 +38,44 @@
             <h3>Type</h3>
             <label for="hotels"><input type="radio" name="type" id="hotels" value="Hotels">Hotels</label>
             <label for="motels"><input type="radio" name="type" id="motels" value="Motels">Motels</label>
-            <label for="apartments"><input type="radio" name="type" id="apartments" value="Apartments">Apartments</label>
-            <h3>Price</h3>
-            <label for="price-from">From: <input type="text" id="price-from" name="price-from" value="0"></label>
-            <label for="price-to">To: <input type="text" id="price-to" name="price-to" value="1000"></label>
-            <input type="submit">
+            <label for="apartments"><input type="radio" name="type" id="apartments"
+                                           value="Apartments">Apartments</label>
+
+            <fieldset>
+                <legend>
+                    <label for="price-from">From: <input type="text" id="price-from" name="price-from"
+                                                         value="0"></label>
+                    <label for="price-to">To: <input type="text" id="price-to" name="price-to" value="1000"></label>
+                    <input type="submit">
+                </legend>
+            </fieldset>
             <button type="reset">Reset</button>
         </form>
     </div>
     <section class="result">
         <p>Found 38 hotels</p>
         <h3>Sorting</h3>
-        <label for="price-sort">Sort by:
-            <select name="prices" id="price-sort">
-                <option value="cheapest">Cheapest</option>
-                <option value="expensive">Expensive</option>
-                <option value="popular">Popular</option>
-                <option value="comfort">Comfort</option>
-            </select>
-        </label>
+        <fieldset>
+            <legend>Price</legend>
+            <label for="price-sort">Sort by:
+                <select name="prices" id="price-sort">
+                    <option value="cheapest">Cheapest</option>
+                    <option value="expensive">Expensive</option>
+                    <option value="popular">Popular</option>
+                    <option value="comfort">Comfort</option>
+                </select>
+            </label>
+        </fieldset>
 
-        <ul>
-            <li><a href="#cards">Cards</a></li>
-            <li><a href="#slide">Slide</a></li>
-            <li><a href="#list">List</a></li>
-        </ul>
+        <fieldset>
+            <legend>sdfsdf</legend>
+            <ul>
+                <li><a href="#cards">Cards</a></li>
+                <li><a href="#slide">Slide</a></li>
+                <li><a href="#list">List</a></li>
+            </ul>
+        </fieldset>
+
     </section>
     <section class="gallery-result">
         <div>
