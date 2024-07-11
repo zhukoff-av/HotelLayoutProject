@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/PTSans-Regular.ttf") format("woff2"),
+    url("fonts/PTSans-Regular.ttf") format("woff");
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/PTSans-Bold.ttf") format("woff2"),
+    url("fonts/PTSans-Bold.ttf") format("woff");
+}
+
+.main-index {
+    background-color: whitesmoke;
+    background-image: url("../images/homePage/index-background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.welcome {
+    padding: 10px;
+    text-align: center;
+}
+
+header {
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'PT Sans', serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/*CATALOG*/
+.catalog-index {
+    background-color: whitesmoke;
+    background-image: url("../images/catalog/background.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+}
+
+.catalog-index h1 {
+    padding: 20px;
+    font-size: 60px;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.catalog-index section{
+    padding: 20px;
+    background: black;
+}
+
+.catalog-load-more{
+    padding: 20px;
+    text-align: center;
+    background: #83B3D3;
+    width: 619.83px;
+    height: 60px;
+    top: 1568px;
+    left: 330px;
+    border-radius: 4px 0px 0px 0px;
+    opacity: 0px;
+}
+
+
+
+
+

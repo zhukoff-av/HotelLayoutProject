@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Hotel Catalog</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-<header>
+<header class="page-header">
+    <img src="images/header/logo.svg" alt="Logo of the company" style="width: 139px; height: 70px">
     <nav>
         <ul>
             <li><a href="#main">Main</a></li>
@@ -26,7 +27,8 @@
     </section>
 </header>
 
-<main>
+<main class="catalog-index">
+    <h1>Hotels</h1>
     <div>
         <form action="https://echo.htmlacademy.ru/">
             <h3>Infrastructure</h3>
@@ -64,13 +66,41 @@
     </section>
     <section class="gallery-result">
         <div>
-            <img src="images/hotel.jpg" alt="Hotel" width="300" height="200">
+            <img src="images/catalog/hotel.png" alt="Hotel" width="300" height="200">
             <h3>Title</h3>
-            <button id="card-hotel">Review</button>
-            <button id="add-to-fav">Add to Favorites</button>
+            <button>Review</button>
+            <button>Add to Favorites</button>
             <p><span>⭐⭐⭐⭐</span>Rating</p>
         </div>
-        <button>Load more</button>
+        <div>
+            <img src="images/catalog/hotel1.png" alt="Hotel" width="300" height="200">
+            <h3>Title</h3>
+            <button>Review</button>
+            <button>Add to Favorites</button>
+            <p><span>⭐⭐⭐⭐</span>Rating</p>
+        </div>
+        <div>
+            <img src="images/catalog/hotel2.png" alt="Hotel" width="300" height="200">
+            <h3>Title</h3>
+            <button>Review</button>
+            <button>Add to Favorites</button>
+            <p><span>⭐⭐⭐⭐</span>Rating</p>
+        </div>
+        <div>
+            <img src="images/catalog/hotel3.png" alt="Hotel" width="300" height="200">
+            <h3>Title</h3>
+            <button>Review</button>
+            <button>Add to Favorites</button>
+            <p><span>⭐⭐⭐⭐</span>Rating</p>
+        </div>
+        <div>
+            <img src="images/catalog/hotel4.png" alt="Hotel" width="300" height="200">
+            <h3>Title</h3>
+            <button>Review</button>
+            <button>Add to Favorites</button>
+            <p><span>⭐⭐⭐⭐</span>Rating</p>
+        </div>
+        <button class="catalog-load-more">Load more</button>
     </section>
 
     <div class="list-of-pages">
