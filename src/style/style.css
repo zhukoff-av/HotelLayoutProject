@@ -60,7 +60,7 @@ body {
 
 .catalog-index section{
     padding: 20px;
-    background: black;
+    background: darkgray;
 }
 
 .catalog-load-more{
@@ -75,6 +75,30 @@ body {
     opacity: 0px;
 }
 
+/* Item */
+.hotel-card {
+    background-color: #FFFFFF;
+}
+
+/* Link */
+.hotel-card-link {
+    text-decoration: none;
+}
+
+/* Title */
+.hotel-card-title {
+    font-weight: 700;
+    color: #242424;
+}
+
+/* Price */
+.hotel-card-price {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    color: #814B18;
+    text-transform: uppercase;
+}
 
 
 
