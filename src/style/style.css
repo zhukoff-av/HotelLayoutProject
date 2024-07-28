@@ -14,11 +14,19 @@
     url("fonts/PTSans-Bold.ttf") format("woff");
 }
 
+html {
+    height: 100%;
+}
+
 .main-index {
+    flex-grow: 1;
     background-color: whitesmoke;
     background-image: url("../images/homePage/index-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
+    /*page-container*/
+    /*width: 940px;*/
+    /*margin: 0 auto;*/
 }
 
 .welcome {
@@ -26,20 +34,66 @@
     text-align: center;
 }
 
+.advantages-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Index columns */
+.index-columns {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    color: #242424;
+    background-color: #FBF7F4;
+    /*background-image: url("images/bg-noisy.png");*/
+}
+
 header {
     color: #FFFFFF;
     background-color: #000000;
 }
 
+nav {
+    display: flex;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.navigation {
+    margin: 0;
+    padding: 0;
+    width: 430px;
+}
+
+.second-menu {
+    margin-left: auto;
+    max-width: 250px;
+}
+
+.items{
+    width: 277px;
+}
+
 a {
-    color: #FFFFFF;
+    /*color: #FFFFFF;*/
     text-decoration: none;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: 'PT Sans', serif;
     font-size: 16px;
     line-height: 24px;
+}
+
+.page-footer-container {
+    display: flex;
+    width: 940px;
+    margin: 0 auto;
+    background-color: cornflowerblue;
 }
 
 /*CATALOG*/
@@ -58,12 +112,12 @@ body {
     margin: 10px;
 }
 
-.catalog-index section{
+.catalog-index section {
     padding: 20px;
     background: darkgray;
 }
 
-.catalog-load-more{
+.catalog-load-more {
     padding: 20px;
     text-align: center;
     background: #83B3D3;
@@ -72,8 +126,10 @@ body {
     top: 1568px;
     left: 330px;
     border-radius: 4px 0px 0px 0px;
-    opacity: 0px;
+    opacity: 0;
 }
+
+/*TODO apply these styles*/
 
 /* Item */
 .hotel-card {

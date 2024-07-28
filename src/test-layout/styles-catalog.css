@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+header {
+    background: darkslategrey;
+    color: white;
+    padding: 10px;
+    /*width: 100%;*/
+    text-align: left;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    color: whitesmoke;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.filter {
+    background: url('../images/catalog/background.png') no-repeat center center;
+    float: left;
+    width: 100%;
+}
+
+.filter-content{
+    padding: 20px;
+}
+
+.hotel-list {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.hotel {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    /*width: 340px;*/
+    float: left;
+}
+
+.hotel img {
+    width: 100%;
+    height: auto;
+}
+
+.pagination {
+    clear: both;
+    padding: 10px 0;
+    margin: 10px;
+    text-align: center;
+}
+
+.pagination a {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+.pagination a.active {
+    background-color: #007BFF;
+    color: white;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    clear: both; /* Clear floats */
+}
